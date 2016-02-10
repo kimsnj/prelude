@@ -4,7 +4,10 @@
 ;;; Code:
 (prelude-require-packages
  '(which-key
-   org-bullets))
+   org-bullets
+   aggressive-indent))
+
+(add-hook 'clojure-mode-hook #'aggressive-indent-mode)
 
 ;; I am not a guru, and  I need guidance:
 (require 'which-key)
